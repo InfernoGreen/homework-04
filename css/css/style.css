@@ -18,8 +18,9 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  background-color: #ffffff;
+  background-color: #ca3333;
 }
+
 h2,
 h3,
 h4,
@@ -30,15 +31,16 @@ ul {
   margin: 0;
   padding: 0;
 }
-button{
+
+button {
   cursor: pointer;
 }
-)
-img{
+) img {
   display: block;
   max-width: 100%;
   height: auto;
 }
+
 .hidden {
   position: absolute;
   width: 1px;
@@ -51,9 +53,11 @@ img{
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 .section {
   padding: 120px 0;
 }
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -61,24 +65,28 @@ img{
   margin-left: auto;
   margin-right: auto;
 }
+
 .link {
   text-decoration: none;
 }
+
 .list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.img-shad{
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
-  0px 1px 1px rgba(46, 47, 66, 0.16), 
-  0px 2px 1px rgba(46, 47, 66, 0.08);
+
+.img-shad {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+
 /* HEDDER>>>>>>>>>>>>>>>>>> LOGO + NAV + ADDRESS*/
 .header-container {
   display: flex;
   align-items: center;
 }
+
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>LOGO */
 .logo {
   font-family: 'Raleway';
@@ -96,6 +104,7 @@ img{
 .logo span {
   color: #2e2f42;
 }
+
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>NAVIGATION */
 .link-menu {
   letter-spacing: 0.02em;
@@ -105,10 +114,12 @@ img{
   display: inline-flex;
   padding: 24px 0;
 }
+
 .link-menu:hover,
-.link-menu:focus{
+.link-menu:focus {
   color: var(--hover-color);
 }
+
 .header-menu li:not(:last-child) {
   margin-right: 40px;
 }
@@ -116,17 +127,21 @@ img{
 .navig_menu {
   display: inline-flex;
 }
+
 .adres_menu {
   list-style: none;
   display: flex;
 }
+
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>ADDRESS*/
 .header-adr {
   margin-left: auto;
 }
+
 .position-adres {
   padding-right: 40px;
 }
+
 .address_link {
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -134,24 +149,29 @@ img{
   font-style: normal;
   text-decoration: none;
 }
+
 .address_link:hover,
 .address_link:focus {
   color: #404bbf;
 }
+
 .activ {
-  color: var(--hover-color);                                                       
+  color: var(--hover-color);
 }
+
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>BLOCK HERO*/
 .hero {
   background-color: var(--hero-bgc);
   padding-top: 188px;
   padding-bottom: 188px;
 }
+
 .container-hero {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
+
 .herotitle {
   display: inline-flex;
   margin: 0;
@@ -162,6 +182,7 @@ img{
   color: var(--wight-color);
   text-align-last: center;
 }
+
 .herobtn {
   font-weight: 500;
   line-height: 1.5;
@@ -173,11 +194,12 @@ img{
   margin-top: 48px;
   padding: 16px 32px;
 }
+
 .herobtn:hover {
   background: var(--hover-color);
 }
-/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>MOTIVATION SECTION*/
 
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>MOTIVATION SECTION*/
 
 .container-m {
   box-sizing: border-box;
@@ -186,9 +208,11 @@ img{
   align-items: center;
   list-style: none;
 }
-.container-m :not(:last-child){
-  margin-right:24px ;
+
+.container-m :not(:last-child) {
+  margin-right: 24px;
 }
+
 .motivation.title {
   font-weight: 500;
   font-size: 20px;
@@ -197,11 +221,13 @@ img{
   letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
+
 .motivation.text {
   line-height: 1.5;
   color: var(--body-color);
   letter-spacing: 0.02em;
 }
+
 .section-title {
   font-size: 36px;
   line-height: 1.11;
@@ -210,6 +236,7 @@ img{
   text-transform: capitalize;
   color: var(--heading-color);
 }
+
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Our Services*/
 /*THIS container*/
 .container-wawdoing {
@@ -223,20 +250,25 @@ img{
   justify-content: space-between;
   align-items: flex-start;
 }
-.wawdoing.section{
+
+.wawdoing.section {
   padding: 0;
 }
+
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Our TEAM*/
 .team {
   background: #f4f4fd;
   padding: 120px 0;
 }
-.team-photo{
+
+.team-photo {
   display: block;
 }
+
 .section-title {
   margin-bottom: 70px;
 }
+
 /* .container-footer{
   padding: 0;
 } */
@@ -248,21 +280,25 @@ img{
   justify-content: space-evenly;
   text-align: center;
 }
+
 .team-list {
   background: #ffffff;
 }
-.team-list :not(:last-child){
+
+.team-list :not(:last-child) {
   margin: 0;
 }
+
 .team-name {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--heading-color);
-  
+
   margin-bottom: 8px;
 }
+
 .team-job {
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -273,6 +309,7 @@ img{
 .footer {
   background-color: var(--heading-color);
 }
+
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -285,11 +322,13 @@ img{
   color: var(--btn-color);
   text-decoration: none;
   padding: 0;
-  margin:0 0 16px 0;
+  margin: 0 0 16px 0;
 }
+
 .footer {
   padding: 100px 0;
 }
+
 .footer-logo span {
   color: #f4f4fd;
 }
@@ -306,6 +345,7 @@ img{
   margin-left: auto;
   margin-right: auto;
 }
+
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>PROGECT LIST( NAVIGATION IN HEADER)*/
 
 .container-main-portf {
@@ -318,19 +358,21 @@ img{
   align-items: center;
   justify-content: center;
 }
+
 .portf_navig_container {
   display: inline-flex;
   row-gap: 20px;
   justify-content: center;
   column-gap: 24px;
   margin: 0px;
-  
 }
+
 .portf_navig_container li {
   flex-direction: row;
   padding: 0px;
   margin-bottom: 72px;
 }
+
 .portf_navig_container button {
   display: flex;
   flex-direction: row;
@@ -338,34 +380,37 @@ img{
   padding: 12px 24px;
   gap: 24%;
 }
+
 .card {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   column-gap: 24px;
   row-gap: 48px;
-  
 }
+
 .card-set {
   display: inline;
   flex-direction: column;
-  border-left: 1px solid #E7E9FC;
-  border-right: 1px solid #E7E9FC;
-  border-bottom: 1px solid #E7E9FC;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .card-contant {
-font-weight: 500;  
-padding: 32px 16px;
+  font-weight: 500;
+  padding: 32px 16px;
 }
 
-.project-text{
-color: var(--body-color);
-margin-top: 8px;
+.project-text {
+  color: var(--body-color);
+  margin-top: 8px;
 }
+
 .project li {
   list-style: none;
 }
+
 .project button {
   background: #f4f4fd;
   border: 1px solid #e7e9fc;
@@ -379,6 +424,7 @@ margin-top: 8px;
   letter-spacing: 0.04em;
   color: var(--btn-color);
 }
+
 .project button:hover,
 .project button:focus {
   background: var(--hover-color);
