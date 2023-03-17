@@ -209,12 +209,21 @@ img {
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>MOTIVATION SECTION*/
 
-.container-m {
-  box-sizing: border-box;
-  width: 1158px;
+.motivation-icon{
   display: flex;
-  align-items: center;
-  list-style: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
+}
+.container-m {
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: baseline;
+    list-style: none;
 }
 
 .container-m :not(:last-child) {
@@ -222,6 +231,7 @@ img {
 }
 .weig_li{
   width: 264px;
+  flex-basis: calc((100% - 24px * 3) / 4);
 }
 .motivation.title {
   font-weight: 500;
