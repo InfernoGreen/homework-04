@@ -18,7 +18,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  background-color: #ca3333;
+  background-color: #ffffff;
 }
 
 h2,
@@ -31,11 +31,14 @@ ul {
   margin: 0;
   padding: 0;
 }
-
+.mail, .tel{
+  padding: 24px 0 ;
+}
 button {
   cursor: pointer;
+  border-radius: 4px;
 }
-) img {
+img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -85,6 +88,7 @@ button {
 .header-container {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #E7E9FC;
 }
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>LOGO */
@@ -131,6 +135,8 @@ button {
 .adres_menu {
   list-style: none;
   display: flex;
+  padding-right: 30px;
+
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>ADDRESS*/
@@ -139,7 +145,7 @@ button {
 }
 
 .position-adres {
-  padding-right: 40px;
+  margin-right: 40px;
 }
 
 .address_link {
@@ -148,6 +154,7 @@ button {
   color: var(--body-color);
   font-style: normal;
   text-decoration: none;
+  
 }
 
 .address_link:hover,
@@ -193,6 +200,7 @@ button {
   font-size: 16px;
   margin-top: 48px;
   padding: 16px 32px;
+  border: none;
 }
 
 .herobtn:hover {
@@ -212,7 +220,9 @@ button {
 .container-m :not(:last-child) {
   margin-right: 24px;
 }
-
+.weig_li{
+  width: 264px;
+}
 .motivation.title {
   font-weight: 500;
   font-size: 20px;
@@ -250,9 +260,11 @@ button {
   justify-content: space-between;
   align-items: flex-start;
 }
-
+.weig_li_waw {
+  width: 360px;
+}
 .wawdoing.section {
-  padding: 0;
+  padding-top: 0;
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Our TEAM*/
@@ -263,6 +275,7 @@ button {
 
 .team-photo {
   display: block;
+  width: 264px;
 }
 
 .section-title {
@@ -364,13 +377,11 @@ button {
   row-gap: 20px;
   justify-content: center;
   column-gap: 24px;
-  margin: 0px;
+  margin-bottom: 72px;
 }
 
 .portf_navig_container li {
-  flex-direction: row;
   padding: 0px;
-  margin-bottom: 72px;
 }
 
 .portf_navig_container button {
@@ -384,22 +395,16 @@ button {
 .card {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
   column-gap: 24px;
   row-gap: 48px;
-}
-
-.card-set {
-  display: inline;
-  flex-direction: column;
-  border-left: 1px solid #e7e9fc;
-  border-right: 1px solid #e7e9fc;
-  border-bottom: 1px solid #e7e9fc;
 }
 
 .card-contant {
   font-weight: 500;
   padding: 32px 16px;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .project-text {
