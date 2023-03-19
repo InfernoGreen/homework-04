@@ -13,9 +13,10 @@
   /*iris* logo, btn*/
   --btn-color: #4d5ae5;
   --hero-bgc: #2e2f42;
+  --foot-focus:rgba(49, 208, 170, 1);
 }
 
-body {
+body, main{
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   background-color: #ffffff;
@@ -31,18 +32,24 @@ ul {
   margin: 0;
   padding: 0;
 }
-.mail, .tel{
-  padding: 24px 0 ;
+
+
+.mail,
+.tel {
+  padding: 24px 0;
 }
+
 button {
   cursor: pointer;
   border-radius: 4px;
 }
+
 img {
-  display: block;
+  display: inline;
   max-width: 100%;
   height: auto;
 }
+
 
 .hidden {
   position: absolute;
@@ -154,7 +161,7 @@ img {
   color: var(--body-color);
   font-style: normal;
   text-decoration: none;
-  
+
 }
 
 .address_link:hover,
@@ -163,14 +170,23 @@ img {
 }
 
 .activ {
-  color: var(--hover-color);
+  color: var(--hov 188px 0er-color);
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>BLOCK HERO*/
 .hero {
   background-color: var(--hero-bgc);
-  padding-top: 188px;
-  padding-bottom: 188px;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)),
+    url("../../images/ourteam/bg-images.jpg");
+  background-size: contain;
+  background-position: center;
+  margin: 0 auto;
+  text-align: center;
+  padding: 188px 0;
+  border-top: 1px solid #e7e9fc;
+  width: 1440px;
+  height: 600px;
 }
 
 .container-hero {
@@ -209,30 +225,33 @@ img {
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>MOTIVATION SECTION*/
 
-.motivation-icon{
+.motivation-icon {
   display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f4f4fd;
-    border-radius: 4px;
-    width: 264px;
-    height: 112px;
-    margin-bottom: 8px;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  margin-bottom: 8px;
 }
+
 .container-m {
-    box-sizing: border-box;
-    display: inline-flex;
-    align-items: baseline;
-    list-style: none;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: baseline;
+  list-style: none;
 }
 
 .container-m :not(:last-child) {
   margin-right: 24px;
 }
-.weig_li{
+
+.weig_li {
   width: 264px;
   flex-basis: calc((100% - 24px * 3) / 4);
 }
+
 .motivation.title {
   font-weight: 500;
   font-size: 20px;
@@ -270,16 +289,18 @@ img {
   justify-content: space-between;
   align-items: flex-start;
 }
+
 .weig_li_waw {
   width: 360px;
 }
+
 .wawdoing.section {
   padding-top: 0;
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Our TEAM*/
 .team {
-  background: #f4f4fd;
+  background-color: #f4f4fd;
   padding: 120px 0;
 }
 
@@ -292,9 +313,11 @@ img {
   margin-bottom: 70px;
 }
 
-/* .container-footer{
-  padding: 0;
-} */
+.icon_link {
+  fill: red;
+  display: flex;
+}
+
 .container-team-card {
   width: 1158px;
   display: flex;
@@ -318,7 +341,6 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--heading-color);
-
   margin-bottom: 8px;
 }
 
@@ -326,11 +348,80 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--body-color);
+
 }
 
+.soc-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  background-size: contain;
+}
+
+.about-icons {
+  background-position-y: center;
+  width: 16px;
+  height: 16px;
+}
+.soc-link{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4D5AE5;;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.soc-links :hover,
+.soc-links :focus {
+  background: var(--hover-color);
+}
+.footer-stile_li{
+  background: rgba(199, 46, 46, 0.1);
+ margin-right: 16px;
+ display: inline-flex;
+ justify-content: center;
+ align-items: center;
+ width: 40px;
+ height: 40px;
+ border-radius: 50%;
+}
+.footer-stile_ul :hover,
+.footer-stile_ul :focus {
+  background: var(--foot-focus);
+}
+.comp-ico-link{
+  fill: var(--address-color);
+}
+
+.comp-ico-link :hover,
+.comp-ico-link :focus {
+  fill: var(--hover-color);
+}
+.comp-ico{
+  padding: 16px 32px;
+  border: 1px solid #8E8F99;
+  border-radius: 4px;
+}
+.customers-comp{
+  display: inline-flex;
+  max-width: 1158px;
+  gap: 24px;
+}
+.customers{
+  padding-bottom: 120px;
+}
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>FOOTER>>>LOGO+TEXT*/
 .footer {
   background-color: var(--heading-color);
+}
+.box_n_box{
+  display: flex;
+}
+.soc-media{
+  color: var(--wight-color);
+  margin-bottom:16px ;
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
