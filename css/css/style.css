@@ -443,10 +443,11 @@ img {
 
 .footer-stile_ul {
   display: flex;
- 
+  gap: 16px;
 }
 .container-footer{
   margin-right: 120px;
+  
 }
 
 .bg-link-foot {
@@ -457,7 +458,6 @@ img {
   justify-content: center;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  ;
 }
 
 .bg-link-foot:hover,
