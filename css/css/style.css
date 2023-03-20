@@ -13,10 +13,11 @@
   /*iris* logo, btn*/
   --btn-color: #4d5ae5;
   --hero-bgc: #2e2f42;
-  --foot-focus:rgba(49, 208, 170, 1);
+  --foot-focus: rgba(49, 208, 170, 1);
 }
 
-body, main{
+body,
+main {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   background-color: #ffffff;
@@ -95,7 +96,11 @@ img {
 .header-container {
   display: flex;
   align-items: center;
+}
+
+.header {
   border-bottom: 1px solid #E7E9FC;
+  box-shadow: 0px 2px 1px rgba(13, 13, 18, 0.431), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>LOGO */
@@ -170,7 +175,7 @@ img {
 }
 
 .activ {
-  color: var(--hov 188px 0er-color);
+  color: var(--hover-color);
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>BLOCK HERO*/
@@ -219,7 +224,8 @@ img {
   border: none;
 }
 
-.herobtn:hover {
+.herobtn:hover,
+.herobtn:focus {
   background: var(--hover-color);
 }
 
@@ -231,7 +237,6 @@ img {
   align-items: center;
   background-color: #f4f4fd;
   border-radius: 4px;
-  width: 264px;
   height: 112px;
   margin-bottom: 8px;
 }
@@ -241,14 +246,11 @@ img {
   display: inline-flex;
   align-items: baseline;
   list-style: none;
+  gap: 24px;
 }
 
-.container-m :not(:last-child) {
-  margin-right: 24px;
-}
 
 .weig_li {
-  width: 264px;
   flex-basis: calc((100% - 24px * 3) / 4);
 }
 
@@ -359,74 +361,108 @@ img {
   background-size: contain;
 }
 
+.bg-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #4D5AE5;
+  cursor: pointer;
+}
+
+.bg-link:hover,
+.bg-link:focus {
+  background: var(--hover-color);
+}
+
 .about-icons {
   background-position-y: center;
   width: 16px;
   height: 16px;
 }
-.soc-link{
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #4D5AE5;;
+
+.soc-link {
   width: 40px;
   height: 40px;
-  border-radius: 50%;
 }
-.soc-links :hover,
-.soc-links :focus {
-  background: var(--hover-color);
-}
-.footer-stile_li{
-  background: rgba(199, 46, 46, 0.1);
- margin-right: 16px;
- display: inline-flex;
- justify-content: center;
- align-items: center;
- width: 40px;
- height: 40px;
- border-radius: 50%;
-}
-.footer-stile_ul :hover,
-.footer-stile_ul :focus {
-  background: var(--foot-focus);
-}
-.comp-ico-link{
+
+
+.comp-ico-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 16px 32px;
+  border: 1px solid var(--address-color);
+  border-radius: 4px;
   fill: var(--address-color);
 }
 
-.comp-ico-link :hover,
-.comp-ico-link :focus {
+.comp-ico-link:hover,
+.comp-ico-link:focus {
+  border: 1px solid var(--hover-color);
   fill: var(--hover-color);
 }
-.comp-ico{
-  padding: 16px 32px;
-  border: 1px solid #8E8F99;
-  border-radius: 4px;
-}
-.customers-comp{
+
+.customers-comp {
   display: inline-flex;
   max-width: 1158px;
   gap: 24px;
 }
-.customers{
+
+.customers {
   padding-bottom: 120px;
 }
+
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>FOOTER>>>LOGO+TEXT*/
-.footer {
-  background-color: var(--heading-color);
-}
-.box_n_box{
+
+
+.box_n_box {
   display: flex;
 }
-.soc-media{
+
+.soc-media {
   color: var(--wight-color);
-  margin-bottom:16px ;
+  margin-bottom: 16px;
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.footer {
+  background-color: var(--heading-color);
+  padding: 100px 0;
+}
+
+.footer-stile_li {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-stile_ul {
+  display: flex;
+ 
+}
+.container-footer{
+  margin-right: 120px;
+}
+
+.bg-link-foot {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  ;
+}
+
+.bg-link-foot:hover,
+.bg-link-foot:focus {
+  background: var(--foot-focus);
+}
 
 .footer-logo {
   display: inline-block;
@@ -437,10 +473,6 @@ img {
   text-decoration: none;
   padding: 0;
   margin: 0 0 16px 0;
-}
-
-.footer {
-  padding: 100px 0;
 }
 
 .footer-logo span {
@@ -454,11 +486,6 @@ img {
   width: 264px;
 }
 
-.container-footer {
-  width: 1158px;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>PROGECT LIST( NAVIGATION IN HEADER)*/
 
@@ -535,4 +562,12 @@ img {
 .project button:focus {
   background: var(--hover-color);
   color: var(--wight-color);
+}
+.card-n-shad{
+  text-decoration: none;
+  display: block;
+}
+.card-n-shad:hover,
+.card-n-shad:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
 }
