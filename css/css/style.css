@@ -100,7 +100,7 @@ img {
 
 .header {
   border-bottom: 1px solid #E7E9FC;
-  box-shadow: 0px 2px 1px rgba(13, 13, 18, 0.431), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>LOGO */
@@ -316,9 +316,9 @@ img {
 }
 
 .icon_link {
-  fill: red;
+  fill: #2E2F42;
   display: flex;
-}
+}  
 
 .container-team-card {
   width: 1158px;
@@ -350,8 +350,6 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--body-color);
-  margin-bottom: 8px;
-
 }
 
 .soc-links {
@@ -360,6 +358,7 @@ img {
   align-items: center;
   cursor: pointer;
   background-size: contain;
+  margin-top: 8px;
 }
 
 .bg-link {
@@ -398,6 +397,7 @@ img {
   border: 1px solid var(--address-color);
   border-radius: 4px;
   fill: var(--address-color);
+  outline: transparent;
 }
 
 .comp-ico-link:hover,
@@ -567,8 +567,12 @@ img {
 .card-n-shad{
   text-decoration: none;
   display: block;
+  outline: transparent;
 }
 .card-n-shad:hover,
 .card-n-shad:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
+}
+.project-title{
+  color: var(--heading-color);
 }
